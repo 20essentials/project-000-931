@@ -1,0 +1,15 @@
+{
+  "name": "project-931",
+  "version": "1.0.0",
+  "description": "Conversor LowerCase, Uppercase, etc.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo Hello"
+  },
+  "keywords": [],
+  "author": "@Dominic",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "8.5.3"
+  }
+}
