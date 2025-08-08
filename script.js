@@ -11,6 +11,15 @@ const $btnAddHyphens = $('.add-hyphens');
 const $btnRemoveUnderscores = $('.remove-underscores');
 const $btnRemoveHyphens = $('.remove-hyphens');
 
+document.addEventListener('keydown', e => {
+  const { key } = e;
+  if (key === 'Enter') {
+    if (document.activeElement === $textarea) return;
+    $textarea.focus();
+    e.preventDefault();
+  }
+});
+
 const toCapitalize = text => {
   return text
     .split(' ')
